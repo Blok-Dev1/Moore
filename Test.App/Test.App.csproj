@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DAQ.Core\DAQ.Core.csproj" />
+    <ProjectReference Include="..\DAQ.CSV\DAQ.CSV.csproj" />
+    <ProjectReference Include="..\DAQ.Sql\DAQ.Sql.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Files\TestFile.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
